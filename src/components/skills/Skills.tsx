@@ -49,13 +49,10 @@ export default function Skills() {
     const newList = list.concat({ id: getRandomInt(), name: text });
     // eslint-disable-next-line
     setList(newList);
-    console.log("clicked");
   };
 
   // eslint-disable-next-line
   const handleChange = (e: any) => {
-    // eslint-disable-next-line
-    console.log("event", e.target.value);
     // eslint-disable-next-line
     setText(e.target.value);
   };
