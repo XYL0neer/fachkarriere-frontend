@@ -63,7 +63,7 @@ export default function Skills() {
   return (
     <>
       <div className="my-4">
-        <h2 className="mx-1 text-2xl">Skills</h2>
+        <h2 className="m-2 text-2xl">Skills</h2>
         <form className="flex gap-4" onSubmit={handleAddSkill}>
           <input
             onChange={handleChange}
