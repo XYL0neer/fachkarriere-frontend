@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { type FormEvent, useContext, useState } from "react";
 import { ProfileContext } from "~/contexts/ProfileContext";
 
 export default function Skills() {
@@ -6,7 +6,7 @@ export default function Skills() {
   const [text, setText] = useState("");
 
   // eslint-disable-next-line
-  const handleAddSkill = (e: any) => {
+  const handleAddSkill = (e: FormEvent) => {
     // eslint-disable-next-line
     e.preventDefault();
     if (addSkill) {
