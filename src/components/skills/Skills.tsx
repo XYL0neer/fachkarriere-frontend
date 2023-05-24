@@ -17,7 +17,7 @@ export default function Skills() {
   };
 
   // eslint-disable-next-line
-  const handleChange = (e: any) => {
+  const handleChange = (e) => {
     // eslint-disable-next-line
     setText(e.target.value);
   };
