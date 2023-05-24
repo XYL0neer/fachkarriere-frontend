@@ -1,4 +1,4 @@
-import { type FormEvent, useState, useContext } from "react";
+import { type FormEvent, useState, useContext, type ChangeEvent } from "react";
 import {ProfileContext} from "~/contexts/ProfileContext";
 
 export default function Timeline() {
@@ -6,12 +6,12 @@ export default function Timeline() {
   const [dateInput, setDateInput] = useState("");
   const [titleInput, setTitleInput] = useState("");
   
-  const onDateChange = (e) => {
+  const onDateChange = (e: ChangeEvent<HTMLInputElement>) => {
     console.log(e.target.value)
     setDateInput(e.target.value);
   }
 
-  const onTitleChange = (e) => {
+  const onTitleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setTitleInput(e.target.value);
   }
 

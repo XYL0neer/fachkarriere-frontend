@@ -1,13 +1,11 @@
-import { type FormEvent, useContext, useState } from "react";
+import { type FormEvent, useContext, useState, type ChangeEvent } from "react";
 import { ProfileContext } from "~/contexts/ProfileContext";
 
 export default function Skills() {
   const {skills, addSkill} = useContext(ProfileContext);
   const [text, setText] = useState("");
 
-  // eslint-disable-next-line
   const handleAddSkill = (e: FormEvent) => {
-    // eslint-disable-next-line
     e.preventDefault();
     if (addSkill) {
       addSkill(text);
@@ -16,9 +14,7 @@ export default function Skills() {
     }
   };
 
-  // eslint-disable-next-line
-  const handleChange = (e) => {
-    // eslint-disable-next-line
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setText(e.target.value);
   };
 
