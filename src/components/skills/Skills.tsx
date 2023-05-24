@@ -49,9 +49,9 @@ export default function Skills() {
         {skills.map((item) => (
           <span
             key={item.id}
-            className="badge m-2 h-8 rounded-3xl bg-white text-black"
+            className="badge badge-lg m-2 py-6 rounded-3xl bg-white text-black"
           >
-            <span className="mx-1 py-1 px-2 text-xl">{item.name}</span>
+            <span className="mx-1 py-8 text-xl">{item.name}</span>
           </span>
         ))}
       </div>
