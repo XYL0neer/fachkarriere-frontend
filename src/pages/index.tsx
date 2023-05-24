@@ -23,8 +23,8 @@ const Home: NextPage = () => {
           <Profile />
         </div>
       </main>
-      <footer className="absolute bottom-0 mx-8 my-4">
-          <Skills />
+      <footer className="absolute bottom-0 mx-8 my-4 w-full">
+        <Skills />
       </footer>
     </>
   );
